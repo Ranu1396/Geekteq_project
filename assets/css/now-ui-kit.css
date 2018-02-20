@@ -1590,6 +1590,20 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
     top: 1px;
 }
 
+.btn-nav-cta {
+    border: 1px solid #13A853;
+    background-color: #2ec866;
+    color: #FFFFFF;
+}
+
+.btn-nav-cta:hover,
+.btn-nav-cta:focus,
+.btn-nav-cta:active {
+      background-color: #1db755;
+}
+
+
+
 .btn-primary {
     background-color: #f96332;
     color: #FFFFFF;
@@ -1674,6 +1688,7 @@ fieldset[disabled] .btn-primary.active {
     background-color: #18ce0f;
     color: #FFFFFF;
 }
+
 
 .btn-success:hover,
 .btn-success:focus,
@@ -3212,7 +3227,7 @@ p.description {
 .card-description,
 .footer-big p {
     color: #9A9A9A;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .category {
@@ -3571,8 +3586,8 @@ body {
 }
 
 .navbar {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.725rem;
+    padding-bottom: 0.725rem;
     min-height: 53px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
@@ -3667,11 +3682,12 @@ body {
 }
 
 .navbar .navbar-brand {
-    text-transform: uppercase;
-    font-size: 0.8571em;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.625rem;
+  text-transform: uppercase;
+  font-size: 0.999em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.625rem;
+  font-weight: 900;
 }
 
 .navbar .navbar-toggler {
@@ -3739,7 +3755,7 @@ body {
 }
 
 .bg-success {
-    background-color: #18ce0f !important;
+    background-color: #2ec866 !important;
 }
 
 .bg-danger {
@@ -3752,6 +3768,10 @@ body {
 
 .bg-white {
     background-color: #FFFFFF !important;
+}
+
+.bg-dark {
+    background-color: #39424e !important;
 }
 
 .dropdown-menu {
@@ -5490,6 +5510,12 @@ Created using IcoMoon - icomoon.io
 
 .section {
     padding: 70px 0;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.section-dashboard {
+    padding: 20px 0;
     position: relative;
     background: #FFFFFF;
 }
@@ -7532,4 +7558,25 @@ Created using IcoMoon - icomoon.io
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.track {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  margin-top: 10px;
+}
+
+.track-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
 }
